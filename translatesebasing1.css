@@ -65,7 +65,7 @@
 {
   display: none;
 }
-.check:checked ~ .content.contentEnglish
+.checktranslate:checked ~ .content.contentEnglish
 {
   display: block;
 }
