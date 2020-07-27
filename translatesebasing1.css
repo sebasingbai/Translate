@@ -1,0 +1,79 @@
+@inport url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+.containertranslate
+{
+  position: relative;
+  max-width: 600px;
+  height: 500px;
+  padding: 50px;
+  color: #555;
+}
+.containertranslate .content
+{
+  display: none;
+  margin-top: 40px;
+}
+.containertranslate .content.contentIndonesia
+{
+  display: block;
+}
+.checktranslate
+{
+  position: relative;
+  width: 52px;
+  height: 18px;
+}
+.checktranslate:before
+{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #333;
+  border-radius: 25px;
+}
+.checktranslate:checked:before
+{
+  background: #00a1ff;
+}
+.checktranslate:after
+{
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.checktranslate:checked:after
+{
+  left: 25px;
+  border: 2px solid #00a1ff;
+}
+.checktranslate:checked ~ .content.contentIndonesia
+{
+  display: none;
+}
+.check:checked ~ .content.contentEnglish
+{
+  display: block;
+}
+.ind
+{
+  color: #333;
+}
+.en
+{
+  color: #00a1ff;
+}
